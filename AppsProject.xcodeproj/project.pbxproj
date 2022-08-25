@@ -54,7 +54,6 @@
 		876BA6CE28AA7B4500A965FA /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876BA6CD28AA7B4500A965FA /* DetailView.swift */; };
 		87ABD4D328AA811300D94714 /* BookCaracterstique.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ABD4D228AA811300D94714 /* BookCaracterstique.swift */; };
 		87ABD4D628AA8B3700D94714 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87ABD4D528AA8B3700D94714 /* ProfileView.swift */; };
-		87AC09D428A6911600DAE2CF /* MainView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87AC09D328A6911600DAE2CF /* MainView.storyboard */; };
 		87BE437528A512E0003737F6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BE437428A512E0003737F6 /* User.swift */; };
 		87BE437928A66344003737F6 /* FirebaseApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BE437828A66344003737F6 /* FirebaseApi.swift */; };
 		87BE438028A67542003737F6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87BE437F28A67542003737F6 /* MainViewController.swift */; };
@@ -68,6 +67,9 @@
 		87F2DA9F28AA253E003255BD /* Books.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F2DA9E28AA253E003255BD /* Books.swift */; };
 		87F2DAA228AA27F2003255BD /* BookRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F2DAA128AA27F2003255BD /* BookRef.swift */; };
 		87F2DAA528AA3C22003255BD /* BookImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F2DAA428AA3C22003255BD /* BookImage.swift */; };
+		D018017528B78C2100382144 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D018017428B78C2100382144 /* HomeViewController.swift */; };
+		D0AA267528B69C5900D712A9 /* MenuTableCellViewXIB.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AA267328B69C5900D712A9 /* MenuTableCellViewXIB.swift */; };
+		D0AA267628B69C5900D712A9 /* MenuTableCellViewXIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0AA267428B69C5900D712A9 /* MenuTableCellViewXIB.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,7 +100,6 @@
 		876BA6CD28AA7B4500A965FA /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		87ABD4D228AA811300D94714 /* BookCaracterstique.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCaracterstique.swift; sourceTree = "<group>"; };
 		87ABD4D528AA8B3700D94714 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		87AC09D328A6911600DAE2CF /* MainView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainView.storyboard; sourceTree = "<group>"; };
 		87BE437428A512E0003737F6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		87BE437828A66344003737F6 /* FirebaseApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseApi.swift; sourceTree = "<group>"; };
 		87BE437F28A67542003737F6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -113,6 +114,9 @@
 		87F2DAA128AA27F2003255BD /* BookRef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRef.swift; sourceTree = "<group>"; };
 		87F2DAA428AA3C22003255BD /* BookImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookImage.swift; sourceTree = "<group>"; };
 		9069BBF7FE75CC2E17EC1E47 /* Pods-AppsProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppsProject.release.xcconfig"; path = "Target Support Files/Pods-AppsProject/Pods-AppsProject.release.xcconfig"; sourceTree = "<group>"; };
+		D018017428B78C2100382144 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D0AA267328B69C5900D712A9 /* MenuTableCellViewXIB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableCellViewXIB.swift; sourceTree = "<group>"; };
+		D0AA267428B69C5900D712A9 /* MenuTableCellViewXIB.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableCellViewXIB.xib; sourceTree = "<group>"; };
 		E48D163D7186D7DD1F64C764 /* Pods-AppsProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppsProject.debug.xcconfig"; path = "Target Support Files/Pods-AppsProject/Pods-AppsProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -221,26 +225,22 @@
 		876B80DB28A3E2E100DF4697 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D018017C28B7B26E00382144 /* EditProfileViw */,
+				D018017B28B78E3700382144 /* SignInViewXIB */,
+				D018017A28B78E0100382144 /* TableViewControllerNib */,
+				D018017928B78DE600382144 /* ProfileView */,
+				D018017828B78DA900382144 /* DetailView */,
+				D018017728B78C7600382144 /* LongInNib */,
+				D018017628B78C5100382144 /* WelcomNib */,
+				D0AA267228B69C2500D712A9 /* menuCell */,
 				873564BF28AAC2F800D9C2DD /* HomeviewXIB.xib */,
 				87F2DA9228A6AF82003255BD /* cell */,
-				876B80E128A3FC4600DF4697 /* WelcomeXIB.swift */,
-				876B80DE28A3EBA600DF4697 /* WelcomeXIB.xib */,
-				876B80E428A400F200DF4697 /* LoginViewXIB.xib */,
-				876B80E728A4011000DF4697 /* LoginViewXIB.swift */,
 				87BE437F28A67542003737F6 /* MainViewController.swift */,
-				87AC09D328A6911600DAE2CF /* MainView.storyboard */,
-				87F2DA8528A6A8AC003255BD /* ProfileView.xib */,
-				87ABD4D528AA8B3700D94714 /* ProfileView.swift */,
-				87F2DA8B28A6AA89003255BD /* TableViewController.swift */,
-				87F2DA8E28A6AD5A003255BD /* TableViewController.xib */,
-				876BA6CA28AA7B2C00A965FA /* DetailView.xib */,
-				876BA6CD28AA7B4500A965FA /* DetailView.swift */,
 				873564C328AAC32A00D9C2DD /* HomeviewXIB.swift */,
 				873564C728ABA9E100D9C2DD /* Extentions.swift */,
-				875A20B528AC8A0C0048446B /* SignInViewXIB.xib */,
-				875A20B828AC9B730048446B /* SignInViewXIB.swift */,
 				8768521828AE6BB100088543 /* EditProfileViewXIB.swift */,
 				8768521B28AE6BE400088543 /* EditProfileViewXIB.xib */,
+				D018017428B78C2100382144 /* HomeViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -269,6 +269,76 @@
 				7CC696FF86C871A6EDEF279B /* Pods_AppsProject.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D018017628B78C5100382144 /* WelcomNib */ = {
+			isa = PBXGroup;
+			children = (
+				876B80E128A3FC4600DF4697 /* WelcomeXIB.swift */,
+				876B80DE28A3EBA600DF4697 /* WelcomeXIB.xib */,
+			);
+			path = WelcomNib;
+			sourceTree = "<group>";
+		};
+		D018017728B78C7600382144 /* LongInNib */ = {
+			isa = PBXGroup;
+			children = (
+				876B80E428A400F200DF4697 /* LoginViewXIB.xib */,
+				876B80E728A4011000DF4697 /* LoginViewXIB.swift */,
+			);
+			path = LongInNib;
+			sourceTree = "<group>";
+		};
+		D018017828B78DA900382144 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				876BA6CA28AA7B2C00A965FA /* DetailView.xib */,
+				876BA6CD28AA7B4500A965FA /* DetailView.swift */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
+		D018017928B78DE600382144 /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				87F2DA8528A6A8AC003255BD /* ProfileView.xib */,
+				87ABD4D528AA8B3700D94714 /* ProfileView.swift */,
+			);
+			path = ProfileView;
+			sourceTree = "<group>";
+		};
+		D018017A28B78E0100382144 /* TableViewControllerNib */ = {
+			isa = PBXGroup;
+			children = (
+				87F2DA8B28A6AA89003255BD /* TableViewController.swift */,
+				87F2DA8E28A6AD5A003255BD /* TableViewController.xib */,
+			);
+			path = TableViewControllerNib;
+			sourceTree = "<group>";
+		};
+		D018017B28B78E3700382144 /* SignInViewXIB */ = {
+			isa = PBXGroup;
+			children = (
+				875A20B528AC8A0C0048446B /* SignInViewXIB.xib */,
+				875A20B828AC9B730048446B /* SignInViewXIB.swift */,
+			);
+			path = SignInViewXIB;
+			sourceTree = "<group>";
+		};
+		D018017C28B7B26E00382144 /* EditProfileViw */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = EditProfileViw;
+			sourceTree = "<group>";
+		};
+		D0AA267228B69C2500D712A9 /* menuCell */ = {
+			isa = PBXGroup;
+			children = (
+				D0AA267328B69C5900D712A9 /* MenuTableCellViewXIB.swift */,
+				D0AA267428B69C5900D712A9 /* MenuTableCellViewXIB.xib */,
+			);
+			path = menuCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,13 +431,13 @@
 				873A23D128A2C1680001924F /* LaunchScreen.storyboard in Resources */,
 				8768521C28AE6BE400088543 /* EditProfileViewXIB.xib in Resources */,
 				876B80DF28A3EBA600DF4697 /* WelcomeXIB.xib in Resources */,
-				87AC09D428A6911600DAE2CF /* MainView.storyboard in Resources */,
 				876B80E528A400F200DF4697 /* LoginViewXIB.xib in Resources */,
 				87F2DA8F28A6AD5A003255BD /* TableViewController.xib in Resources */,
 				873A23DA28A2C2200001924F /* GoogleService-Info.plist in Resources */,
 				873A23CE28A2C1680001924F /* Assets.xcassets in Resources */,
 				873A23C928A2C1670001924F /* Main.storyboard in Resources */,
 				87F2DA8628A6A8AC003255BD /* ProfileView.xib in Resources */,
+				D0AA267628B69C5900D712A9 /* MenuTableCellViewXIB.xib in Resources */,
 				876BA6CB28AA7B2C00A965FA /* DetailView.xib in Resources */,
 				87F2DA9628A6AFDF003255BD /* SingleTableViewCell.xib in Resources */,
 				873564C028AAC2F800D9C2DD /* HomeviewXIB.xib in Resources */,
@@ -434,7 +504,9 @@
 				87ABD4D328AA811300D94714 /* BookCaracterstique.swift in Sources */,
 				873A23C628A2C1670001924F /* ViewController.swift in Sources */,
 				87BE437928A66344003737F6 /* FirebaseApi.swift in Sources */,
+				D018017528B78C2100382144 /* HomeViewController.swift in Sources */,
 				87F2DAA528AA3C22003255BD /* BookImage.swift in Sources */,
+				D0AA267528B69C5900D712A9 /* MenuTableCellViewXIB.swift in Sources */,
 				87F2DA9C28AA21EA003255BD /* BooksAPI.swift in Sources */,
 				87BE437528A512E0003737F6 /* User.swift in Sources */,
 				87ABD4D628AA8B3700D94714 /* ProfileView.swift in Sources */,

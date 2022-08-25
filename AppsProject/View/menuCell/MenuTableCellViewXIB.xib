@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="menuCell" rowHeight="143" id="Uf3-Td-qzq" customClass="MenuTableCellViewXIB" customModule="AppsProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="812" height="143"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Uf3-Td-qzq" id="rJT-JZ-QoW" customClass="MenuTableCellViewXIBTableViewCell" customModule="AppsProject" customModuleProvider="target">
+                <rect key="frame" x="0.0" y="0.0" width="812" height="143"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homekit" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Uqd-gn-GLk">
+                        <rect key="frame" x="42" y="7" width="131" height="128"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LL0-Jl-Tc8">
+                        <rect key="frame" x="207" y="7" width="527" height="115"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="LL0-Jl-Tc8" firstAttribute="leading" secondItem="Uqd-gn-GLk" secondAttribute="trailing" constant="34" id="emM-Fl-TxW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="LL0-Jl-Tc8" firstAttribute="width" secondItem="Uf3-Td-qzq" secondAttribute="width" multiplier="0.649015" id="3wi-Ck-gjj"/>
+                <constraint firstItem="Uqd-gn-GLk" firstAttribute="top" secondItem="Uf3-Td-qzq" secondAttribute="top" constant="7" id="5ml-7q-cc2"/>
+                <constraint firstItem="LL0-Jl-Tc8" firstAttribute="width" secondItem="Uf3-Td-qzq" secondAttribute="height" multiplier="527:143" id="EWt-Jf-L86"/>
+                <constraint firstItem="Uqd-gn-GLk" firstAttribute="height" secondItem="Uf3-Td-qzq" secondAttribute="height" multiplier="0.895105" id="L2o-Lp-gkM"/>
+                <constraint firstItem="Uqd-gn-GLk" firstAttribute="leading" secondItem="Uf3-Td-qzq" secondAttribute="leading" constant="42" id="PVZ-DF-imd"/>
+                <constraint firstItem="LL0-Jl-Tc8" firstAttribute="top" secondItem="Uf3-Td-qzq" secondAttribute="top" constant="7" id="TJV-cG-yyd"/>
+                <constraint firstItem="LL0-Jl-Tc8" firstAttribute="height" secondItem="Uf3-Td-qzq" secondAttribute="height" multiplier="0.804196" id="ZPB-o0-Tku"/>
+                <constraint firstItem="Uqd-gn-GLk" firstAttribute="width" secondItem="Uf3-Td-qzq" secondAttribute="width" multiplier="0.16133" id="c0q-Wd-LQf"/>
+            </constraints>
+            <connections>
+                <outlet property="imageLabel" destination="Uqd-gn-GLk" id="Rgr-0O-AaR"/>
+                <outlet property="menuItemLable" destination="LL0-Jl-Tc8" id="1Ru-yx-aUh"/>
+            </connections>
+            <point key="canvasLocation" x="52.173913043478265" y="133.59375"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="homekit" catalog="system" width="128" height="106"/>
+    </resources>
+</document>

@@ -12,4 +12,5 @@ target 'AppsProject' do
   pod 'RxCocoa'
   pod 'AlamofireImage', '~> 4.1'
   pod 'ProgressHUD'
+  pod 'SideMenu'
 end
