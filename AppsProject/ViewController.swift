@@ -12,78 +12,78 @@ import AlamofireImage
 class ViewController: UIViewController {
     
     
-    var sideMenuNC :  SideMenuNavigationController!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        
-        
-        sideMenuConfig()
-    
-    }
-    
-    func sideMenuConfig(){
-        
-        let sideMenuVC = UIViewController()
-        sideMenuVC.view.backgroundColor = .systemBlue   // zedaa njareb .systemblue
-        sideMenuNC = .init(rootViewController: MenuListController())
-        sideMenuNC.leftSide = true
-        sideMenuNC.statusBarEndAlpha = 0
-        sideMenuNC.isNavigationBarHidden = true
-        sideMenuNC.menuWidth = view.bounds.width * 0.8
-        
-    }
-    @IBAction func sideMenuAction(_ sender: UIBarButtonItem) {
-        self.present(sideMenuNC, animated: true)
-    }
-    
- 
-}
-class MenuListController: UITableViewController {
-    var items = [0:["name":"home","image":"homekit","controllerName":"ViewConroller"],1:["name":"profile", "image":"person.fill", "controllerName": "ProfileConroller"]]
-    
-    var menuItem = [String : Dictionary<String,String>] ()
-    var menuItemDetail = [String : String] ()
-    
-    let darkColor = UIColor(red: 33/255.0, green: 33/255.0, blue: 33/255.0, alpha: 1)
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        tableView.backgroundColor = .systemGray6
-        tableView.register(UINib(nibName: "MenuTableCellViewXIB", bundle: nil), forCellReuseIdentifier: "menuCell")
-        tableView.delegate = self
-        tableView.dataSource = self
-    }
-    
-    func intrfaceNavigation(controllerName:String){
-        if (controllerName == "HomeController"){
-           self.present(MainViewController(), animated: true)
-
-        }
-    }
-    
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items.count
-    }
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "menuCell", for: indexPath) as! MenuTableCellViewXIB
-        cell.imageLabel.image = UIImage(systemName: items[indexPath.row]!["image"]!)
-        cell.menuItemLable?.text = items[indexPath.row]!["name"]
-        cell.backgroundColor = .systemGray6
-        cell.menuItemLable?.textColor = .systemBlue
-        return cell
-    }
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: false)
-        if (indexPath.item == 0){
-            intrfaceNavigation(controllerName: "HomeController")
-        }
-        print(indexPath.item)
-        
-    }
-}
-    
+//    var sideMenuNC :  SideMenuNavigationController!
+//
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//
+//
+//
+//        sideMenuConfig()
+//
+//    }
+//
+//    func sideMenuConfig(){
+//
+//        let sideMenuVC = UIViewController()
+//        sideMenuVC.view.backgroundColor = .systemBlue   // zedaa njareb .systemblue
+//        sideMenuNC = .init(rootViewController: MenuListController())
+//        sideMenuNC.leftSide = true
+//        sideMenuNC.statusBarEndAlpha = 0
+//        sideMenuNC.isNavigationBarHidden = true
+//        sideMenuNC.menuWidth = view.bounds.width * 0.8
+//
+//    }
+//    @IBAction func sideMenuAction(_ sender: UIBarButtonItem) {
+//        self.present(sideMenuNC, animated: true)
+//    }
+//
+//
+//}
+//class MenuListController: UITableViewController {
+//    var items = [0:["name":"home","image":"homekit","controllerName":"ViewConroller"],1:["name":"profile", "image":"person.fill", "controllerName": "ProfileConroller"]]
+//
+//    var menuItem = [String : Dictionary<String,String>] ()
+//    var menuItemDetail = [String : String] ()
+//
+//    let darkColor = UIColor(red: 33/255.0, green: 33/255.0, blue: 33/255.0, alpha: 1)
+//
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        tableView.backgroundColor = .systemGray6
+//        tableView.register(UINib(nibName: "MenuTableCellViewXIB", bundle: nil), forCellReuseIdentifier: "menuCell")
+//        tableView.delegate = self
+//        tableView.dataSource = self
+//    }
+//
+//    func intrfaceNavigation(controllerName:String){
+//        if (controllerName == "HomeController"){
+//           self.present(MainViewController(), animated: true)
+//
+//        }
+//    }
+//
+//    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return items.count
+//    }
+//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "menuCell", for: indexPath) as! MenuTableCellViewXIB
+//        cell.imageLabel.image = UIImage(systemName: items[indexPath.row]!["image"]!)
+//        cell.menuItemLable?.text = items[indexPath.row]!["name"]
+//        cell.backgroundColor = .systemGray6
+//        cell.menuItemLable?.textColor = .systemBlue
+//        return cell
+//    }
+//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        tableView.deselectRow(at: indexPath, animated: false)
+//        if (indexPath.item == 0){
+//            intrfaceNavigation(controllerName: "HomeController")
+//        }
+//        print(indexPath.item)
+//
+//    }
+//}
+//
     
     
     
@@ -95,7 +95,7 @@ class MenuListController: UITableViewController {
     
     ///////////////////
     
-    /*
+
     let button = UIButton()
     @IBAction fileprivate func handlePresentingView(_ sender: UIButton) {
       let vc = MainViewController()
@@ -120,7 +120,6 @@ class MenuListController: UITableViewController {
         self.view.addSubview(newView)
     }
 }
-*/
 
 
 

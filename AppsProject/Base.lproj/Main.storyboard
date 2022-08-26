@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pz1-p1-2tn">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="m2L-1w-x88">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -31,6 +31,72 @@
             </objects>
             <point key="canvasLocation" x="217" y="88"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="ria-3e-23P">
+            <objects>
+                <viewController id="WDd-IB-9T4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qaq-4Q-UkL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="efg-bo-RHE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nj4-k6-SMK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1386" y="-379"/>
+        </scene>
+        <!--Book's List-->
+        <scene sceneID="2mV-IR-sz5">
+            <objects>
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="7ks-d2-fGb" customClass="BooksTableViewController" customModule="AppsProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="oVN-Fj-LIK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="7ks-d2-fGb" id="nNd-Dj-CUM"/>
+                            <outlet property="delegate" destination="7ks-d2-fGb" id="R9P-Bo-ubU"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Book's List" id="PIR-WY-2QU"/>
+                    <connections>
+                        <outlet property="tableViewList" destination="oVN-Fj-LIK" id="4u8-Sy-shc"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XvN-oE-XtM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2321.739130434783" y="-1037.2767857142858"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="294-Hj-Par">
+            <objects>
+                <navigationController id="5fc-np-SVh" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bLZ-jn-2Bs">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="7ks-d2-fGb" kind="relationship" relationship="rootViewController" id="crY-h0-bbY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xSn-do-F3I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1386" y="-1037"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="e2l-ru-eB1">
+            <objects>
+                <splitViewController allowDoubleColumnStyle="YES" id="m2L-1w-x88" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="5fc-np-SVh" kind="relationship" relationship="masterViewController" id="F87-Pt-1XB"/>
+                        <segue destination="WDd-IB-9T4" kind="relationship" relationship="detailViewController" id="ERh-LB-dvG"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yy3-Ep-Upm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="599" y="-699"/>
+        </scene>
         <!--Main View Controller-->
         <scene sceneID="5rQ-ef-PbM">
             <objects>
@@ -45,7 +111,7 @@
         <!--profile-->
         <scene sceneID="bn4-Z3-Ao4">
             <objects>
-                <viewController id="c0q-Xd-ZLP" sceneMemberID="viewController">
+                <viewController id="c0q-Xd-ZLP" customClass="ProfileViewController" customModule="AppsProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PdL-aK-P2m">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -56,7 +122,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WQs-GS-bDG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4909" y="402"/>
+            <point key="canvasLocation" x="4851" y="579"/>
         </scene>
         <!--Libaries-->
         <scene sceneID="lXN-nh-3BG">

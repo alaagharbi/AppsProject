@@ -19,9 +19,6 @@ class TableViewController: UIView {
             (tv,tableViewItem,cell) in
        if let bookObserver = tableViewItem.value as? Dictionary<String,String> {
        let downloadURL = URL(string: bookObserver["image"]!)!
-        
-        //
-     
      //   cell.productImage.af.setImage(withURLRequest: NSURL(fileURLWithPath: ttq["image"]!) as! URLRequestConvertible)
       //  let url = URL(string: "https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/09/12/11/naturo-monkey-selfie.jpg?w968h681")
       //  let imageView = UIImageView(frame: frame)
@@ -59,21 +56,6 @@ class TableViewController: UIView {
                     self.addSubview(firt)
                  })
                 .disposed(by: disposeBag)
-    }}
-extension UIImageView {
-   func getData(from url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()) {
-      URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
-   }
-   func downloadImage(from url: URL) {
-      getData(from: url) {
-         data, response, error in
-         guard let data = data, error == nil else {
-            return
-         }
-         DispatchQueue.main.async() {
-            self.image = UIImage(data: data)
-         }
-      }
-   }
-
+    }
+    
 }

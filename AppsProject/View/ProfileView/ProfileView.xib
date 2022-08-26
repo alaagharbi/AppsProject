@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -123,9 +123,6 @@
                     <state key="normal" title="Edit Profile">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
-                    <connections>
-                        <action selector="editUserProfile:" destination="iN0-l3-epB" eventType="touchUpInside" id="uwQ-ns-CTe"/>
-                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MuZ-SV-xZT">
                     <rect key="frame" x="88" y="680" width="238" height="42"/>
@@ -167,6 +164,7 @@
             </constraints>
             <connections>
                 <outlet property="birthdayLB" destination="DcC-1D-TXP" id="Dd9-zR-cWe"/>
+                <outlet property="editProfileBtn" destination="raC-Vn-gBP" id="YMA-ai-eL2"/>
                 <outlet property="emailLB" destination="Dhr-jI-NVo" id="pSP-Ng-uLu"/>
                 <outlet property="lastNameLB" destination="dtA-tH-V9B" id="Muy-Hm-7tG"/>
                 <outlet property="nameLB" destination="nFQ-YJ-Avd" id="jbm-kG-xFb"/>
