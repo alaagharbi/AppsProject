@@ -60,20 +60,15 @@ class BooksTableViewController: UITableViewController {
                  book in
                //     print(foodObject.item)
               //    print("*******-------")
-                    let bookitem = BooksAPI.shared.getBook(val: String(book.item))
-//                    print(a)
-       //             Taks.init(datetime: a["datetime"]!, temperature: a["temperature"]!, icon: ss)
-
-                   // let firt = Bundle.main.loadNibNamed("DetailView", owner: nil, options: nil)?.first as! DetailView
-
-                 //   self.addSubview(firt)
+                     let bookitem = BooksAPI.shared.getBook(val: String(book.item))
+              //          print(a)
+              //           Taks.init(datetime: a["datetime"]!, temperature: a["temperature"]!, icon: ss)
+              // let firt = Bundle.main.loadNibNamed("DetailView", owner: nil, options: nil)?.first as! DetailView
+              //   self.addSubview(firt)
                  })
                 .disposed(by: disposeBag)
-
-        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
@@ -92,9 +87,6 @@ class BooksTableViewController: UITableViewController {
         return 0
     }
 */
-    
-    
-    
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)

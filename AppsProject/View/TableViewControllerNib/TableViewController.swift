@@ -57,5 +57,4 @@ class TableViewController: UIView {
                  })
                 .disposed(by: disposeBag)
     }
-    
 }

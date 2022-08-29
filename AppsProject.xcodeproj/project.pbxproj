@@ -69,6 +69,9 @@
 		87F2DAA528AA3C22003255BD /* BookImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F2DAA428AA3C22003255BD /* BookImage.swift */; };
 		D005743028B8C81A00ADB216 /* BooksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D005742F28B8C81A00ADB216 /* BooksTableViewController.swift */; };
 		D018017528B78C2100382144 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D018017428B78C2100382144 /* ProfileViewController.swift */; };
+		D09996BB28B92AEB00372169 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09996BA28B92AEB00372169 /* SignInViewController.swift */; };
+		D09996BD28B92B0300372169 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09996BC28B92B0300372169 /* LogInViewController.swift */; };
+		D09996BF28B92B3A00372169 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09996BE28B92B3A00372169 /* FirstViewController.swift */; };
 		D0AA267528B69C5900D712A9 /* MenuTableCellViewXIB.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AA267328B69C5900D712A9 /* MenuTableCellViewXIB.swift */; };
 		D0AA267628B69C5900D712A9 /* MenuTableCellViewXIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0AA267428B69C5900D712A9 /* MenuTableCellViewXIB.xib */; };
 /* End PBXBuildFile section */
@@ -117,6 +120,9 @@
 		9069BBF7FE75CC2E17EC1E47 /* Pods-AppsProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppsProject.release.xcconfig"; path = "Target Support Files/Pods-AppsProject/Pods-AppsProject.release.xcconfig"; sourceTree = "<group>"; };
 		D005742F28B8C81A00ADB216 /* BooksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksTableViewController.swift; sourceTree = "<group>"; };
 		D018017428B78C2100382144 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		D09996BA28B92AEB00372169 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		D09996BC28B92B0300372169 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		D09996BE28B92B3A00372169 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		D0AA267328B69C5900D712A9 /* MenuTableCellViewXIB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableCellViewXIB.swift; sourceTree = "<group>"; };
 		D0AA267428B69C5900D712A9 /* MenuTableCellViewXIB.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableCellViewXIB.xib; sourceTree = "<group>"; };
 		E48D163D7186D7DD1F64C764 /* Pods-AppsProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppsProject.debug.xcconfig"; path = "Target Support Files/Pods-AppsProject/Pods-AppsProject.debug.xcconfig"; sourceTree = "<group>"; };
@@ -242,6 +248,9 @@
 				873564C728ABA9E100D9C2DD /* Extentions.swift */,
 				D018017428B78C2100382144 /* ProfileViewController.swift */,
 				D005742F28B8C81A00ADB216 /* BooksTableViewController.swift */,
+				D09996BA28B92AEB00372169 /* SignInViewController.swift */,
+				D09996BC28B92B0300372169 /* LogInViewController.swift */,
+				D09996BE28B92B3A00372169 /* FirstViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -496,6 +505,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D09996BB28B92AEB00372169 /* SignInViewController.swift in Sources */,
 				8768521928AE6BB100088543 /* EditProfileViewXIB.swift in Sources */,
 				87F2DAA228AA27F2003255BD /* BookRef.swift in Sources */,
 				876BA6CE28AA7B4500A965FA /* DetailView.swift in Sources */,
@@ -510,11 +520,13 @@
 				D018017528B78C2100382144 /* ProfileViewController.swift in Sources */,
 				87F2DAA528AA3C22003255BD /* BookImage.swift in Sources */,
 				D0AA267528B69C5900D712A9 /* MenuTableCellViewXIB.swift in Sources */,
+				D09996BF28B92B3A00372169 /* FirstViewController.swift in Sources */,
 				87F2DA9C28AA21EA003255BD /* BooksAPI.swift in Sources */,
 				87BE437528A512E0003737F6 /* User.swift in Sources */,
 				87ABD4D628AA8B3700D94714 /* ProfileView.swift in Sources */,
 				875A20B928AC9B730048446B /* SignInViewXIB.swift in Sources */,
 				873564C828ABA9E100D9C2DD /* Extentions.swift in Sources */,
+				D09996BD28B92B0300372169 /* LogInViewController.swift in Sources */,
 				87F2DA8C28A6AA89003255BD /* TableViewController.swift in Sources */,
 				87F2DA9F28AA253E003255BD /* Books.swift in Sources */,
 				873A23C228A2C1670001924F /* AppDelegate.swift in Sources */,
