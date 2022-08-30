@@ -70,7 +70,7 @@ class UserApi {
     func getUserInformation(onSuccess: @escaping() -> Void){
         var userData = Dictionary<String, String>()
         let rootRef = Database.database ().reference ()
-        let ref = rootRef.child("users").child (Auth.auth().currentUser!.uid) .observeSingleEvent(of: .value, with: { (snapshot) in
+        let ref = rootRef.child("users").child (Auth.auth().currentUser!.uid).observeSingleEvent(of: .value, with: { (snapshot) in
            let userDict = snapshot.value as! [String: Any]
             let userEmail = userDict["email"] as! String
             let userName = userDict["name"] as! String
@@ -110,7 +110,7 @@ class UserApi {
     func setUserDefaultInformation(onSuccess: @escaping() -> Void){
         var userData = Dictionary<String, String>()
         let rootRef = Database.database ().reference ()
-        let ref = rootRef.child("users").child (Auth.auth().currentUser!.uid) .observeSingleEvent(of: .value, with: { (snapshot) in
+        _ = rootRef.child("users").child (Auth.auth().currentUser!.uid) .observeSingleEvent(of: .value, with: { (snapshot) in
            let userDict = snapshot.value as! [String: Any]
             let userEmail = userDict["email"] as! String
             let userName = userDict["name"] as! String
