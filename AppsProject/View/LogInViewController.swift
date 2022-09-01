@@ -10,9 +10,7 @@ class LogInViewController: UIViewController {
         (errorMessage) in
         print(errorMessage)
     }
-
-
-    }
+}
     
     func onErrorFunction() {
         print("error !!!!")

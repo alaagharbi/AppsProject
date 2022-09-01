@@ -9,8 +9,9 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        logInBtn.btnShhape()
-        signInBtn.btnShhape()        // Do any additional setup after loading the view.
+//        logInBtn.btnShhape()
+//        signInBtn.btnShhape()
+    // Do any additional setup after loading the 
     }
     
 

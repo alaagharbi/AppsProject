@@ -10,6 +10,7 @@
 		31B7D81950DE1A1312B74B74 /* Pods_AppsProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CC696FF86C871A6EDEF279B /* Pods_AppsProject.framework */; };
 		3A8EB3F628BF6282008DEA34 /* BooksSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8EB3F528BF6282008DEA34 /* BooksSplitViewController.swift */; };
 		3AA2ACAB28BFC5D800EADA24 /* StartScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA2ACAA28BFC5D800EADA24 /* StartScreenController.swift */; };
+		3AA2ACAD28C1161200EADA24 /* LogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA2ACAC28C1161200EADA24 /* LogInController.swift */; };
 		87126E3628AD2744007BA102 /* UserInofrmations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87126E3528AD2744007BA102 /* UserInofrmations.swift */; };
 		873564C028AAC2F800D9C2DD /* HomeviewXIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 873564BF28AAC2F800D9C2DD /* HomeviewXIB.xib */; };
 		873564C428AAC32A00D9C2DD /* HomeviewXIB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873564C328AAC32A00D9C2DD /* HomeviewXIB.swift */; };
@@ -82,6 +83,7 @@
 /* Begin PBXFileReference section */
 		3A8EB3F528BF6282008DEA34 /* BooksSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksSplitViewController.swift; sourceTree = "<group>"; };
 		3AA2ACAA28BFC5D800EADA24 /* StartScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenController.swift; sourceTree = "<group>"; };
+		3AA2ACAC28C1161200EADA24 /* LogInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInController.swift; sourceTree = "<group>"; };
 		7CC696FF86C871A6EDEF279B /* Pods_AppsProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppsProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87126E3528AD2744007BA102 /* UserInofrmations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInofrmations.swift; sourceTree = "<group>"; };
 		873564BF28AAC2F800D9C2DD /* HomeviewXIB.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeviewXIB.xib; sourceTree = "<group>"; };
@@ -260,6 +262,7 @@
 				D08A8DEF28BE2DFD001BBC9A /* SlitViewController.swift */,
 				3A8EB3F528BF6282008DEA34 /* BooksSplitViewController.swift */,
 				3AA2ACAA28BFC5D800EADA24 /* StartScreenController.swift */,
+				3AA2ACAC28C1161200EADA24 /* LogInController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -543,6 +546,7 @@
 				87F2DA9F28AA253E003255BD /* Books.swift in Sources */,
 				873A23C228A2C1670001924F /* AppDelegate.swift in Sources */,
 				873A23C428A2C1670001924F /* SceneDelegate.swift in Sources */,
+				3AA2ACAD28C1161200EADA24 /* LogInController.swift in Sources */,
 				D005743028B8C81A00ADB216 /* BooksTableViewController.swift in Sources */,
 				873A23CC28A2C1670001924F /* AppsProject.xcdatamodeld in Sources */,
 				87F2DA9928AA1E59003255BD /* Book.swift in Sources */,

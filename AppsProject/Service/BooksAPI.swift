@@ -47,9 +47,9 @@ class BooksAPI{
                     dys["subtitle"] = book.volumeInfo.subtitle
               //      print(book.volumeInfo.publishedDate)
                     print("-----------")
-                  print(dys["image"])
+                    print(dys["image"]!)
                     print("------------------")
-                    print(dys["subtitle"])
+                    print(dys["subtitle"]!)
                     print("///////////////////")
                     // dys["authors"] = book.volumeInfo.authors[0]
                    //  dys["description"] = book.volumeInfo.description
@@ -77,10 +77,8 @@ class BooksAPI{
     ///let size = string.count
         //let string2 = string.suffix(size - 4)
         let ch :Character = "s"
-        var i = string.index(string.startIndex, offsetBy: 4)
+        let i = string.index(string.startIndex, offsetBy: 4)
         string1.insert(ch, at:  i)
- //       print("--------//////////")
-  //      print(string1)
     return string1
     }
 }

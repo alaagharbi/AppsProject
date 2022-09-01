@@ -40,7 +40,7 @@ class UserApi {
             Database.database().reference().child("users").child(authData.user.uid).setValue(dict, withCompletionBlock: {
                     (error, ref) in
                      if error != nil {
-                        print(error?.localizedDescription)
+                         print(error?.localizedDescription)
                         signinreturn = false
                      }
                      else {
@@ -60,7 +60,7 @@ class UserApi {
                 onError(error!.localizedDescription)
                 return
             }
-            print(authResult?.user.email)
+            print(authResult?.user.email!)
             onSuccess()
         }
     }
@@ -70,7 +70,7 @@ class UserApi {
     func getUserInformation(onSuccess: @escaping() -> Void){
         var userData = Dictionary<String, String>()
         let rootRef = Database.database ().reference ()
-        let ref = rootRef.child("users").child (Auth.auth().currentUser!.uid).observeSingleEvent(of: .value, with: { (snapshot) in
+        let ref: Void = rootRef.child("users").child (Auth.auth().currentUser!.uid).observeSingleEvent(of: .value, with: { (snapshot) in
            let userDict = snapshot.value as! [String: Any]
             let userEmail = userDict["email"] as! String
             let userName = userDict["name"] as! String

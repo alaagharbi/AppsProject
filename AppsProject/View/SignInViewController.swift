@@ -49,10 +49,17 @@ class SignInViewController: UIViewController {
         
     }
     @IBAction func registerUser(_ sender: UIButton) {
+        let signInstatus = UserApi().signUp(email: self.emailTF.text!, password: self.passwordTF.text!, phone: self.phoneTF.text!, name: self.nameTF.text!, lastname: self.lastNameTF.text!, address: self.adressTF.text!, gender: self.nameTF.text!, birthday: self.birthdayTF.text!)
+        
+        if(signInstatus){
+//            print("true")
+        present(ViewController(), animated: false)
+        }
+        else {print("check urrr inputs mannnnn !!!!!!!")}
+
     }
-    
     @IBAction func goToLogIn(_ sender: UIButton) {
-        present(LogInViewController(), animated: true)
+        present(LogInViewController(), animated: false)
     }
     
     @objc func keyboardWillShow(sender: NSNotification) {
