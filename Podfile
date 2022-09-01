@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
- platform :ios, '10.3'
+ platform :ios, '12.0'
 
 target 'AppsProject' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -10,7 +10,7 @@ target 'AppsProject' do
   pod 'Alamofire'
   pod 'RxSwift'
   pod 'RxCocoa'
-  pod 'AlamofireImage', '~> 4.1'
+  pod 'AlamofireImage'
   pod 'ProgressHUD'
   pod 'SideMenu'
 end

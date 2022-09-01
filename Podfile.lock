@@ -14,7 +14,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
-  - AlamofireImage (~> 4.1)
+  - AlamofireImage
   - ProgressHUD
   - RAMAnimatedTabBarController
   - RxCocoa
@@ -42,6 +42,6 @@ SPEC CHECKSUMS:
   RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
   SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
 
-PODFILE CHECKSUM: 86f1f05b83ccecebe0e1ec0f129ad204ac010b1d
+PODFILE CHECKSUM: ca097a05b4c27b0c3a93bdd27fb6287cfff4aeb4
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.8.4

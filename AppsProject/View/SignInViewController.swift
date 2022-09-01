@@ -48,6 +48,8 @@ class SignInViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(sender:)), name: UIResponder.keyboardWillHideNotification, object: nil);
         
     }
+    @IBAction func registerUser(_ sender: UIButton) {
+    }
     
     @IBAction func goToLogIn(_ sender: UIButton) {
         present(LogInViewController(), animated: true)
@@ -63,7 +65,7 @@ class SignInViewController: UIViewController {
 }
 
 extension SignInViewController :UITextFieldDelegate {
-    ///hedhi function controlles 3ala letters t5allik taccepti ken caracteret elli 7ejtek bihom
+    //-NOTE : here it controle input it acce
 
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         ///For mobile numer validation
@@ -83,15 +85,14 @@ extension SignInViewController :UITextFieldDelegate {
         }
         return true
     }
-    ///Hedhi neblokiyou beha menu elli feha select w copy w paste w seleyt w recherche wghirou
+    // - NOTE: - Hedhi neblokiyou beha menu elli feha select w copy w paste w seleyt w recherche wghirou
        override func canPerformAction(_ action: Selector, withSender sender: Any?) ->  Bool {
            if birthdayTF.isFirstResponder {
                DispatchQueue.main.async(execute: {
-                   (sender as? UIMenuController)?.setMenuVisible(false, animated: false)
+                   (sender as? UIMenuController)?.setMenuVisible(false, animated: true)
                })
                return false
            }
-
            return super.canPerformAction(action, withSender: sender)
        }
        
@@ -120,5 +121,4 @@ extension SignInViewController :UITextFieldDelegate {
         self.profileImage.clipsToBounds = true
         self.profileImage.layer.cornerRadius = self.profileImage.frame.size.width / 2
     }
-
 }
