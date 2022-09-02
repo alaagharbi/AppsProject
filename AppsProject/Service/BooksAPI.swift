@@ -32,8 +32,8 @@ class BooksAPI{
                guard let books = response.value else {
                        return
                }
-                
-               do{
+
+            do{
                 for book in books.items{
                     self.i = self.i+1
                     dys["link"] = book.selfLink

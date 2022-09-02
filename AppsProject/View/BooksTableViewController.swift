@@ -58,6 +58,8 @@ class BooksTableViewController: UITableViewController {
                   print("*******-------")
                    let  bookitem = BooksAPI.shared.getBook(val: String(book.item))
                      print(bookitem)
+                        let detailVC = DetailViewController()
+                            
                 //     showDetailViewController(DetailViewController(), sender: nil)
              //   present
                      //           Taks.init(datetime: a["datetime"]!, temperature: a["temperature"]!, icon: ss)
