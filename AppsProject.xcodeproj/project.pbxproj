@@ -11,6 +11,7 @@
 		3A8EB3F628BF6282008DEA34 /* BooksSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8EB3F528BF6282008DEA34 /* BooksSplitViewController.swift */; };
 		3AA2ACAB28BFC5D800EADA24 /* StartScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA2ACAA28BFC5D800EADA24 /* StartScreenController.swift */; };
 		3AA2ACAD28C1161200EADA24 /* LogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA2ACAC28C1161200EADA24 /* LogInController.swift */; };
+		3AA2ACAF28C1FFE600EADA24 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA2ACAE28C1FFE500EADA24 /* TabBarViewController.swift */; };
 		87126E3628AD2744007BA102 /* UserInofrmations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87126E3528AD2744007BA102 /* UserInofrmations.swift */; };
 		873564C028AAC2F800D9C2DD /* HomeviewXIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 873564BF28AAC2F800D9C2DD /* HomeviewXIB.xib */; };
 		873564C428AAC32A00D9C2DD /* HomeviewXIB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873564C328AAC32A00D9C2DD /* HomeviewXIB.swift */; };
@@ -84,6 +85,7 @@
 		3A8EB3F528BF6282008DEA34 /* BooksSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksSplitViewController.swift; sourceTree = "<group>"; };
 		3AA2ACAA28BFC5D800EADA24 /* StartScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenController.swift; sourceTree = "<group>"; };
 		3AA2ACAC28C1161200EADA24 /* LogInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInController.swift; sourceTree = "<group>"; };
+		3AA2ACAE28C1FFE500EADA24 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		7CC696FF86C871A6EDEF279B /* Pods_AppsProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppsProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87126E3528AD2744007BA102 /* UserInofrmations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInofrmations.swift; sourceTree = "<group>"; };
 		873564BF28AAC2F800D9C2DD /* HomeviewXIB.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeviewXIB.xib; sourceTree = "<group>"; };
@@ -263,6 +265,7 @@
 				3A8EB3F528BF6282008DEA34 /* BooksSplitViewController.swift */,
 				3AA2ACAA28BFC5D800EADA24 /* StartScreenController.swift */,
 				3AA2ACAC28C1161200EADA24 /* LogInController.swift */,
+				3AA2ACAE28C1FFE500EADA24 /* TabBarViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -535,6 +538,7 @@
 				D0AA267528B69C5900D712A9 /* MenuTableCellViewXIB.swift in Sources */,
 				3AA2ACAB28BFC5D800EADA24 /* StartScreenController.swift in Sources */,
 				D09996BF28B92B3A00372169 /* FirstViewController.swift in Sources */,
+				3AA2ACAF28C1FFE600EADA24 /* TabBarViewController.swift in Sources */,
 				87F2DA9C28AA21EA003255BD /* BooksAPI.swift in Sources */,
 				87BE437528A512E0003737F6 /* User.swift in Sources */,
 				87ABD4D628AA8B3700D94714 /* ProfileView.swift in Sources */,
