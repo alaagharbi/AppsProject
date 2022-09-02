@@ -1,9 +1,3 @@
-//
-//  BooksTableViewController.swift
-//  AppsProject
-//
-//  Created by ag mac on 26/8/2022.
-//
 
 import UIKit
 import RxCocoa
@@ -14,7 +8,10 @@ import AlamofireImage
 class BooksTableViewController: UITableViewController {
     let disposeBag = DisposeBag()
     let tems = BooksAPI.shared.dic
+    var collapseDetailViewController: Bool = true
 
+ 
+  //  var bookitem : Dictionary<String,String>
     @IBOutlet weak var tableViewList: UITableView!
     @IBOutlet weak var titleLB: UILabel!
     @IBOutlet weak var cellView: UIView!
@@ -27,7 +24,6 @@ class BooksTableViewController: UITableViewController {
  //       self.tableViewList = Bundle.main.loadNibNamed("TableViewController", owner: nil, options: nil)?.first as! TableViewController
 
         self.tableViewList.register(UINib(nibName: "SingleTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
-
         let _ = tems.asObservable().bind(to: tableViewList.rx.items(cellIdentifier: "cell",cellType: SingleTableViewCell.self)){
             (tv,tableViewItem,cell) in
        if let bookObserver = tableViewItem.value as? Dictionary<String,String> {
@@ -58,11 +54,13 @@ class BooksTableViewController: UITableViewController {
         tableViewList.rx.itemSelected
                  .subscribe(onNext: {
                  book in
-               //     print(foodObject.item)
-              //    print("*******-------")
-                     let bookitem = BooksAPI.shared.getBook(val: String(book.item))
-              //          print(a)
-              //           Taks.init(datetime: a["datetime"]!, temperature: a["temperature"]!, icon: ss)
+                  print(book.item)
+                  print("*******-------")
+                   let  bookitem = BooksAPI.shared.getBook(val: String(book.item))
+                     print(bookitem)
+                //     showDetailViewController(DetailViewController(), sender: nil)
+             //   present
+                     //           Taks.init(datetime: a["datetime"]!, temperature: a["temperature"]!, icon: ss)
               // let firt = Bundle.main.loadNibNamed("DetailView", owner: nil, options: nil)?.first as! DetailView
               //   self.addSubview(firt)
                  })
@@ -132,5 +130,11 @@ class BooksTableViewController: UITableViewController {
     }
     */
 
+    // MARK: - UITableViewDelegate
 
+    override func tableView(_ tableView: UITableView,
+                            didSelectRowAt indexPath: IndexPath)
+    {
+        self.collapseDetailViewController = false
+    }
 }
