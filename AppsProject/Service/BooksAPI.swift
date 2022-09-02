@@ -28,9 +28,6 @@ class BooksAPI{
         var dys = [String : String] ()
            AF.request(URL)
              .validate()
-            /*.responseJSON { (response) in
-                print(response)
-            }*/
                .responseDecodable(of: Books.self) { (response) in
                guard let books = response.value else {
                        return
@@ -45,12 +42,15 @@ class BooksAPI{
                   
                     dys["image"] =   self.addSinString(string: book.volumeInfo.imageURL.thumbnail)
                     dys["subtitle"] = book.volumeInfo.subtitle
+                    dys["description"] = book.volumeInfo.description
+
               //      print(book.volumeInfo.publishedDate)
                     print("-----------")
                     print(dys["image"]!)
                     print("------------------")
-                    print(dys["subtitle"]!)
+                    print(dys["subtitle"])
                     print("///////////////////")
+                    print(dys["description"])
                     // dys["authors"] = book.volumeInfo.authors[0]
                    //  dys["description"] = book.volumeInfo.description
                     // obs["author"] = book.temp
