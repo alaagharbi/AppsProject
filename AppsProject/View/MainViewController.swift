@@ -28,7 +28,6 @@ class CustomTabBarController: RAMAnimatedTabBarController {
     func configure() {
         let vc1 =  UIViewController()
         let vc2 =  UIViewController()
-    
 //        vc1.view.frame = .systemBlue
         let firstVarXIB = Bundle.main.loadNibNamed("TableViewController", owner: nil, options: nil)?.first as! TableViewController
         firstVarXIB.frame.size = self.view.frame.size

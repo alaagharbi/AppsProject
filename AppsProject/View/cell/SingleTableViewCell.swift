@@ -10,7 +10,6 @@ class SingleTableViewCell: UITableViewCell {
         super.awakeFromNib()
         productImage.layer.cornerRadius = 10.0
         productImage.layer.masksToBounds = true
-
         cellView.layer.cornerRadius = 1.0
         cellView.layer.masksToBounds = true
         self.layer.cornerRadius = 10.0
