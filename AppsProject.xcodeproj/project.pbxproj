@@ -12,6 +12,7 @@
 		3A36BEC828DB65A7002A66CC /* ElecronicBook+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A36BEC428DB65A7002A66CC /* ElecronicBook+CoreDataProperties.swift */; };
 		3A36BEC928DB65A7002A66CC /* EBookType+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A36BEC528DB65A7002A66CC /* EBookType+CoreDataClass.swift */; };
 		3A36BECA28DB65A7002A66CC /* EBookType+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A36BEC628DB65A7002A66CC /* EBookType+CoreDataProperties.swift */; };
+		3A36BECC28DB6A44002A66CC /* LocalBookListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A36BECB28DB6A44002A66CC /* LocalBookListController.swift */; };
 		3A8EB3F628BF6282008DEA34 /* BooksSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8EB3F528BF6282008DEA34 /* BooksSplitViewController.swift */; };
 		3AA2ACAB28BFC5D800EADA24 /* StartScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA2ACAA28BFC5D800EADA24 /* StartScreenController.swift */; };
 		3AA2ACAD28C1161200EADA24 /* LogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA2ACAC28C1161200EADA24 /* LogInController.swift */; };
@@ -91,6 +92,7 @@
 		3A36BEC428DB65A7002A66CC /* ElecronicBook+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ElecronicBook+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3A36BEC528DB65A7002A66CC /* EBookType+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EBookType+CoreDataClass.swift"; sourceTree = "<group>"; };
 		3A36BEC628DB65A7002A66CC /* EBookType+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EBookType+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3A36BECB28DB6A44002A66CC /* LocalBookListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LocalBookListController.swift; path = View/LocalBookListController.swift; sourceTree = "<group>"; };
 		3A8EB3F528BF6282008DEA34 /* BooksSplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksSplitViewController.swift; sourceTree = "<group>"; };
 		3AA2ACAA28BFC5D800EADA24 /* StartScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenController.swift; sourceTree = "<group>"; };
 		3AA2ACAC28C1161200EADA24 /* LogInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInController.swift; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 				873A23CF28A2C1680001924F /* LaunchScreen.storyboard */,
 				873A23D228A2C1680001924F /* Info.plist */,
 				873A23CA28A2C1670001924F /* AppsProject.xcdatamodeld */,
+				3A36BECB28DB6A44002A66CC /* LocalBookListController.swift */,
 			);
 			path = AppsProject;
 			sourceTree = "<group>";
@@ -549,6 +552,7 @@
 				876B80E228A3FC4600DF4697 /* WelcomeXIB.swift in Sources */,
 				873564C428AAC32A00D9C2DD /* HomeviewXIB.swift in Sources */,
 				87ABD4D328AA811300D94714 /* BookCaracterstique.swift in Sources */,
+				3A36BECC28DB6A44002A66CC /* LocalBookListController.swift in Sources */,
 				873A23C628A2C1670001924F /* ViewController.swift in Sources */,
 				87BE437928A66344003737F6 /* FirebaseApi.swift in Sources */,
 				D018017528B78C2100382144 /* ProfileViewController.swift in Sources */,
