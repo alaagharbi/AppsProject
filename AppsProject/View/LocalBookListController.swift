@@ -35,7 +35,6 @@ class LocalBookListController: UIViewController, UITableViewDataSource, UITableV
          present(alert, animated: true)
         }
         
-        
         func showAll() {
             do {
                 models = try context.fetch(ElecronicBook.fetchRequest())
