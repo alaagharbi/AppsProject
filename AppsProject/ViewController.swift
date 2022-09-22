@@ -121,21 +121,6 @@ class ViewController: UIViewController {
         self.view.addSubview(newView)
     }
 }
-
-
-
-/// note: fsaffafa
-
-
-
-
-
-
-
-
-
-
-
  //  var btn = UIButton()
     
 //var button = UIButton()

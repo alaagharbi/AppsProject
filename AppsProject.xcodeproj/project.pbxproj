@@ -244,6 +244,10 @@
 		876B80DA28A3E2CF00DF4697 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3A36BEC328DB65A7002A66CC /* ElecronicBook+CoreDataClass.swift */,
+				3A36BEC428DB65A7002A66CC /* ElecronicBook+CoreDataProperties.swift */,
+				3A36BEC528DB65A7002A66CC /* EBookType+CoreDataClass.swift */,
+				3A36BEC628DB65A7002A66CC /* EBookType+CoreDataProperties.swift */,
 				87BE437428A512E0003737F6 /* User.swift */,
 				87F2DA9828AA1E59003255BD /* Book.swift */,
 				87F2DA9E28AA253E003255BD /* Books.swift */,
@@ -287,10 +291,6 @@
 		876B80DC28A3E31900DF4697 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				3A36BEC328DB65A7002A66CC /* ElecronicBook+CoreDataClass.swift */,
-				3A36BEC428DB65A7002A66CC /* ElecronicBook+CoreDataProperties.swift */,
-				3A36BEC528DB65A7002A66CC /* EBookType+CoreDataClass.swift */,
-				3A36BEC628DB65A7002A66CC /* EBookType+CoreDataProperties.swift */,
 				87BE437828A66344003737F6 /* FirebaseApi.swift */,
 				87F2DA9B28AA21EA003255BD /* BooksAPI.swift */,
 			);

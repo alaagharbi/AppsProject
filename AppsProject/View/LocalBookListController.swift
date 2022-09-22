@@ -18,12 +18,11 @@ class LocalBookListController: UIViewController, UITableViewDataSource, UITableV
             tableView.delegate = self
             tableView.dataSource = self
             tableView.frame = view.bounds
-        
             navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didTapAdd))
         }
      @objc private func didTapAdd() {
          
-         let alert = UIAlertController(title: "New item ", message: "Entze new Item", preferredStyle: .alert)
+         let alert = UIAlertController(title: "New book ", message: "Entze new Book", preferredStyle: .alert)
          alert.addTextField(configurationHandler: nil)
          alert.addAction(UIAlertAction(title: "submit", style: .cancel, handler: { [weak self] _ in
             guard let field = alert.textFields?.first,
@@ -74,9 +73,7 @@ class LocalBookListController: UIViewController, UITableViewDataSource, UITableV
             do {
                 try context.save()
                 showAll()
-
             } catch  {
-                
             }
         }
         
@@ -95,7 +92,7 @@ class LocalBookListController: UIViewController, UITableViewDataSource, UITableV
             let sheet = UIAlertController(title: "Edit", message: nil, preferredStyle: .actionSheet)
             sheet.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
             sheet.addAction(UIAlertAction(title: "edit", style: .default, handler:{ _ in
-                                          let alert = UIAlertController(title: "edit Item", message: "enter new title", preferredStyle: .alert)
+                                          let alert = UIAlertController(title: "edit Book", message: "enter new title", preferredStyle: .alert)
                                           alert.addTextField(configurationHandler: nil)
                                           alert.textFields?.first?.text = item.title
                                           alert.addAction(UIAlertAction(title: "submit", style: .cancel, handler: {
@@ -107,7 +104,6 @@ class LocalBookListController: UIViewController, UITableViewDataSource, UITableV
                 self.present(alert, animated: true)
             }))
             sheet.addAction(UIAlertAction(title: "delete", style: .destructive, handler: {[weak self] _ in self?.deleteItem(item: item)}))
-
             present(sheet, animated: true)
         }
-    }
+}
