@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="h0l-CQ-XKT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="THh-hJ-SP0">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <accessibilityOverrides dynamicTypePreference="9"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EL-Book" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pam-Eu-1FG">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LooKiiBook" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pam-Eu-1FG">
                                 <rect key="frame" x="-33" y="360" width="480" height="186"/>
                                 <color key="backgroundColor" red="0.12941176469999999" green="0.68181818179999998" blue="0.96076143700000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="56"/>
@@ -41,7 +40,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uLx-Rm-mpY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1857" y="-2916"/>
+            <point key="canvasLocation" x="2766.666666666667" y="-2916.2946428571427"/>
         </scene>
         <!--First View Controller-->
         <scene sceneID="JIh-TD-qFV">
@@ -52,7 +51,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="k1ANjs-light-book-picture-png" translatesAutoresizingMaskIntoConstraints="NO" id="OeC-kW-Rfi">
-                                <rect key="frame" x="92" y="88" width="230" height="205"/>
+                                <rect key="frame" x="92" y="132" width="230" height="205"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.masksToBounds">
                                         <integer key="value" value="30"/>
@@ -61,21 +60,15 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMb-WR-OrN">
-                                <rect key="frame" x="23" y="433" width="368" height="49"/>
+                                <rect key="frame" x="23" y="477" width="368" height="49"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="LogIn">
-                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="16"/>
-                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="a0g-5a-MfZ" kind="presentation" id="vrf-vT-uU0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3nf-4Q-o6h">
-                                <rect key="frame" x="23" y="513" width="368" height="49"/>
+                                <rect key="frame" x="23" y="557" width="368" height="49"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="SignIn">
-                                    <fontDescription key="titleFontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
-                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="4mg-Vl-G4S" kind="show" id="WfR-We-OEK"/>
                                 </connections>
@@ -98,6 +91,7 @@
                             <constraint firstItem="3nf-4Q-o6h" firstAttribute="centerX" secondItem="kmo-Gv-xwr" secondAttribute="centerX" id="yhn-EI-KRk"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="93E-eE-BNL"/>
                     <connections>
                         <outlet property="imageView" destination="OeC-kW-Rfi" id="WYO-v3-oMC"/>
                         <outlet property="logInBtn" destination="PMb-WR-OrN" id="LWZ-Jd-cKg"/>
@@ -105,7 +99,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="091-9Z-oGJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4171" y="-2405"/>
+            <point key="canvasLocation" x="-3260.8695652173915" y="-2405.3571428571427"/>
         </scene>
         <!--Log In View Controller-->
         <scene sceneID="Y1G-D7-GS7">
@@ -146,7 +140,6 @@
                                                 <rect key="frame" x="38" y="471" width="338" height="34.5"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="tinted" title="LogIn"/>
                                                 <connections>
                                                     <action selector="LogToMain:" destination="geH-pQ-mci" eventType="touchUpInside" id="3n7-LF-VvO"/>
                                                 </connections>
@@ -195,39 +188,39 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Is0-zw-cD4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="793" y="-2916"/>
+            <point key="canvasLocation" x="1702.8985507246377" y="-2916.2946428571427"/>
         </scene>
         <!--Sign In View Controller-->
         <scene sceneID="wVI-L1-37x">
             <objects>
                 <viewController id="4mg-Vl-G4S" customClass="SignInViewController" customModule="AppsProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hxz-hR-hYr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDP-75-uOh">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G1t-EJ-RQF">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="864.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.square.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="hzE-H0-YJ4">
-                                                <rect key="frame" x="136.5" y="53" width="141" height="138.5"/>
+                                                <rect key="frame" x="132" y="53" width="150" height="147.5"/>
                                             </imageView>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="fNT-LY-ZpU">
-                                                <rect key="frame" x="48" y="212" width="318" height="34"/>
+                                                <rect key="frame" x="48" y="221" width="318" height="34"/>
                                                 <accessibility key="accessibilityConfiguration" hint="Name"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="namePhonePad" textContentType="given-name"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Lastname" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Bf9-kW-2hP">
-                                                <rect key="frame" x="48" y="254" width="318" height="34"/>
+                                                <rect key="frame" x="48" y="263" width="318" height="34"/>
                                                 <accessibility key="accessibilityConfiguration" hint="LastName"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="namePhonePad" textContentType="family-name"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9RN-4j-XF7">
-                                                <rect key="frame" x="48" y="649" width="318" height="40"/>
+                                                <rect key="frame" x="48" y="658" width="318" height="40"/>
                                                 <color key="backgroundColor" systemColor="linkColor"/>
                                                 <color key="tintColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
                                                 <state key="normal" title="Submit" image="person.fill.badge.plus" catalog="system">
@@ -238,31 +231,31 @@
                                                 </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="FYa-z2-GlG">
-                                                <rect key="frame" x="48" y="296" width="318" height="40"/>
+                                                <rect key="frame" x="48" y="305" width="318" height="40"/>
                                                 <accessibility key="accessibilityConfiguration" hint="email"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="xSe-ce-Ggz">
-                                                <rect key="frame" x="48" y="392" width="318" height="40"/>
+                                                <rect key="frame" x="48" y="401" width="318" height="40"/>
                                                 <accessibility key="accessibilityConfiguration" hint="Password"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" textContentType="password"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="confirm password" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="V9g-oD-n25">
-                                                <rect key="frame" x="48" y="440" width="318" height="40"/>
+                                                <rect key="frame" x="48" y="449" width="318" height="40"/>
                                                 <accessibility key="accessibilityConfiguration" hint="Retape Password"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" textContentType="password"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Birthday" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="GaX-wo-RZX">
-                                                <rect key="frame" x="48" y="532" width="318" height="40"/>
+                                                <rect key="frame" x="48" y="541" width="318" height="40"/>
                                                 <accessibility key="accessibilityConfiguration" hint="Birthday"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QHT-b4-gao">
-                                                <rect key="frame" x="48" y="488" width="318" height="36"/>
+                                                <rect key="frame" x="48" y="497" width="318" height="36"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender  :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Qih-jv-8ZJ">
                                                         <rect key="frame" x="8" y="2.5" width="88" height="31"/>
@@ -291,7 +284,7 @@
                                                 </constraints>
                                             </view>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="S7U-HP-3IQ">
-                                                <rect key="frame" x="48" y="344" width="318" height="40"/>
+                                                <rect key="frame" x="48" y="353" width="318" height="40"/>
                                                 <accessibility key="accessibilityConfiguration" hint="Phone Number"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="phonePad" textContentType="tel"/>
@@ -304,13 +297,13 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="1LI-2D-98M">
-                                                <rect key="frame" x="48" y="580" width="318" height="40"/>
+                                                <rect key="frame" x="48" y="589" width="318" height="40"/>
                                                 <accessibility key="accessibilityConfiguration" hint="Adress"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oDE-H9-fEb">
-                                                <rect key="frame" x="48" y="697" width="318" height="39"/>
+                                                <rect key="frame" x="48" y="706" width="318" height="39"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPb-CY-gLz">
                                                         <rect key="frame" x="0.0" y="3.5" width="209" height="32"/>
@@ -430,7 +423,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8YG-P1-Yx2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-867" y="-2744"/>
+            <point key="canvasLocation" x="42.028985507246382" y="-2744.1964285714284"/>
         </scene>
         <!--Title-->
         <scene sceneID="tne-QT-ifu">
@@ -491,7 +484,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XvN-oE-XtM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6886" y="-2339"/>
+            <point key="canvasLocation" x="7795.652173913044" y="-2339.0625"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="294-Hj-Par">
@@ -507,7 +500,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xSn-do-F3I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5910" y="-2339"/>
+            <point key="canvasLocation" x="6818.8405797101459" y="-2339.0625"/>
         </scene>
         <!--Books List-->
         <scene sceneID="e2l-ru-eB1">
@@ -521,7 +514,7 @@
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yy3-Ep-Upm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4372" y="-2130"/>
+            <point key="canvasLocation" x="5281.1594202898559" y="-2130.1339285714284"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="5rQ-ef-PbM">
@@ -556,10 +549,10 @@
             </objects>
             <point key="canvasLocation" x="4957.971014492754" y="-855.13392857142856"/>
         </scene>
-        <!--Tab Bar View Controller-->
+        <!--Tab Bar Controller-->
         <scene sceneID="eSx-rW-1UX">
             <objects>
-                <tabBarController id="h0l-CQ-XKT" customClass="TabBarViewController" customModule="AppsProject" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainTabBarController" id="h0l-CQ-XKT" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="fPu-w4-M1t">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -644,9 +637,6 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vYR-1v-fxc">
                                                 <rect key="frame" x="82.5" y="411" width="249" height="35"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="tinted" title="Login">
-                                                    <fontDescription key="titleFontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="32"/>
-                                                </buttonConfiguration>
                                                 <connections>
                                                     <action selector="logTo:" destination="a0g-5a-MfZ" eventType="touchUpInside" id="ctU-7F-Kej"/>
                                                 </connections>
@@ -709,7 +699,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UqE-x9-dMt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-870" y="-2022"/>
+            <point key="canvasLocation" x="39.130434782608695" y="-2022.3214285714284"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wo0-Y6-SqB">
@@ -747,9 +737,27 @@
             </objects>
             <point key="canvasLocation" x="-4410.144927536232" y="-796.20535714285711"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rNm-Sx-MMi">
+            <objects>
+                <navigationController storyboardIdentifier="LoginNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="THh-hJ-SP0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vcz-5E-w3V">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Kjo-tl-tEd" kind="relationship" relationship="rootViewController" id="qOI-3F-yaq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0uH-TO-d5b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4171.0144927536239" y="-2405.3571428571427"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="books.vertical" catalog="system" width="128" height="107"/>
+        <image name="books.vertical" catalog="system" width="128" height="103"/>
         <image name="k1ANjs-light-book-picture-png" width="1600" height="711"/>
         <image name="list.dash" catalog="system" width="128" height="85"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
