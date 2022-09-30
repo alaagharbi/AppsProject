@@ -80,6 +80,8 @@
 		D005743028B8C81A00ADB216 /* BooksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D005742F28B8C81A00ADB216 /* BooksTableViewController.swift */; };
 		D018017528B78C2100382144 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D018017428B78C2100382144 /* ProfileViewController.swift */; };
 		D08A8DF028BE2DFE001BBC9A /* SlitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08A8DEF28BE2DFD001BBC9A /* SlitViewController.swift */; };
+		D09478F128E72426000BFA6F /* AddBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09478F028E72426000BFA6F /* AddBookViewController.swift */; };
+		D09478F328E73BE0000BFA6F /* DetailBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09478F228E73BDF000BFA6F /* DetailBookViewController.swift */; };
 		D09996BB28B92AEB00372169 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09996BA28B92AEB00372169 /* SignInViewController.swift */; };
 		D09996BD28B92B0300372169 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09996BC28B92B0300372169 /* LogInViewController.swift */; };
 		D09996BF28B92B3A00372169 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D09996BE28B92B3A00372169 /* FirstViewController.swift */; };
@@ -142,6 +144,8 @@
 		D005742F28B8C81A00ADB216 /* BooksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksTableViewController.swift; sourceTree = "<group>"; };
 		D018017428B78C2100382144 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		D08A8DEF28BE2DFD001BBC9A /* SlitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlitViewController.swift; sourceTree = "<group>"; };
+		D09478F028E72426000BFA6F /* AddBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBookViewController.swift; sourceTree = "<group>"; };
+		D09478F228E73BDF000BFA6F /* DetailBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBookViewController.swift; sourceTree = "<group>"; };
 		D09996BA28B92AEB00372169 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		D09996BC28B92B0300372169 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		D09996BE28B92B3A00372169 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -284,6 +288,8 @@
 				3AA2ACAC28C1161200EADA24 /* LogInController.swift */,
 				3AA2ACAE28C1FFE500EADA24 /* TabBarViewController.swift */,
 				3AA2ACB028C2101700EADA24 /* DetailViewController.swift */,
+				D09478F028E72426000BFA6F /* AddBookViewController.swift */,
+				D09478F228E73BDF000BFA6F /* DetailBookViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -562,6 +568,7 @@
 				3AA2ACAB28BFC5D800EADA24 /* StartScreenController.swift in Sources */,
 				D09996BF28B92B3A00372169 /* FirstViewController.swift in Sources */,
 				3AA2ACAF28C1FFE600EADA24 /* TabBarViewController.swift in Sources */,
+				D09478F328E73BE0000BFA6F /* DetailBookViewController.swift in Sources */,
 				87F2DA9C28AA21EA003255BD /* BooksAPI.swift in Sources */,
 				87BE437528A512E0003737F6 /* User.swift in Sources */,
 				87ABD4D628AA8B3700D94714 /* ProfileView.swift in Sources */,
@@ -569,6 +576,7 @@
 				873564C828ABA9E100D9C2DD /* Extentions.swift in Sources */,
 				D08A8DF028BE2DFE001BBC9A /* SlitViewController.swift in Sources */,
 				D09996BD28B92B0300372169 /* LogInViewController.swift in Sources */,
+				D09478F128E72426000BFA6F /* AddBookViewController.swift in Sources */,
 				87F2DA8C28A6AA89003255BD /* TableViewController.swift in Sources */,
 				3AA2ACB128C2101800EADA24 /* DetailViewController.swift in Sources */,
 				87F2DA9F28AA253E003255BD /* Books.swift in Sources */,
