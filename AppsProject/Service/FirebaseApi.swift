@@ -91,6 +91,9 @@ class UserApi {
             if(UserInformation.usrInfo != nil){
                 onSuccess()
                 print("success")
+                print("ggsg")
+                UserDefaults.standard.set(userName, forKey: "userName")
+                UserDefaults.standard.set(userEmail, forKey: "email")
             }
             print("-----*******")
         })
