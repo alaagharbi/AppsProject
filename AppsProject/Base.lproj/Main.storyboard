@@ -663,6 +663,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibM-c6-gaV">
                                 <rect key="frame" x="93" y="484" width="228" height="30"/>
                                 <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="addBokSubmitCover:" destination="MZR-E3-jQ1" eventType="touchUpInside" id="HHs-fv-ghW"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Author's Name " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kHi-jR-H2a">
                                 <rect key="frame" x="93" y="401" width="228" height="34"/>

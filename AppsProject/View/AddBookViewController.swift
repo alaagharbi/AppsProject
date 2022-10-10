@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Firebase
+//import FirebaseStorageSwift
 
 class AddBookViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     var pickedImage = false
@@ -37,7 +39,22 @@ class AddBookViewController: UIViewController, UIImagePickerControllerDelegate, 
 //            pickedImage = true
 //        }
 //    }
-
+    @IBAction func addBokSubmitCover(_ sender: UIButton) {
+        let randomID = UUID.init().uuidString
+        let uploaderRef = Storage.storage().reference(withPath: "bookCover/\(randomID).jpg")
+        guard let imageData = bookCoverIV.image?.jpegData(compressionQuality: 0.75) else { return }
+        let uploadMetaData = StorageMetadata.init()
+        uploadMetaData.contentType = "image/jpeg"
+        uploaderRef.putData(imageData, metadata: uploadMetaData){
+            (downloadMetadata, error) in
+            if let error = error {
+                print("Got an error !! \(error.localizedDescription)")
+                return
+            }
+            print("put is competed and i got this back : \(String(describing: downloadMetadata))")
+        }
+    }
+    
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         self.dismiss(animated: true, completion: nil)
     }
