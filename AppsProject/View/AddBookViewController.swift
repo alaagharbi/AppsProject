@@ -51,6 +51,19 @@ class AddBookViewController: UIViewController, UIImagePickerControllerDelegate, 
         self.dismiss(animated: true, completion: nil)
     }
 
+    @IBAction func downloadImage(_ sender: Any) {
+        let storageRef = Storage.storage().reference(withPath: "bookCover/1A889B9B-DA5F-416C-9685-65B0B3633964.jpg")
+        let taskReference = storageRef.getData(maxSize: 4 * 1024 * 1024){
+            [weak self](data, error) in
+            if let error = error {
+                print("got an error in \(error.localizedDescription)")
+                return
+            }
+            if let data = data {
+                self?.bookCoverIV.image = UIImage(data: data)
+            }
+        }
+    }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage
         bookCoverIV.image = image

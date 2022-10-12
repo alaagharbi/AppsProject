@@ -672,6 +672,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DqF-EO-Cb7">
+                                <rect key="frame" x="151" y="565" width="112" height="30"/>
+                                <state key="normal" title="download image"/>
+                                <connections>
+                                    <action selector="downloadImage:" destination="MZR-E3-jQ1" eventType="touchUpInside" id="Azh-lj-R2u"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eEo-kl-4mE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -680,7 +687,9 @@
                             <constraint firstItem="SEN-lx-5E0" firstAttribute="height" secondItem="WYZ-Bg-wA0" secondAttribute="height" multiplier="0.0379464" id="0lJ-P6-kde"/>
                             <constraint firstItem="nUd-ct-n6t" firstAttribute="centerX" secondItem="eEo-kl-4mE" secondAttribute="centerX" id="3T0-Cm-Pw2"/>
                             <constraint firstItem="nUd-ct-n6t" firstAttribute="centerX" secondItem="eEo-kl-4mE" secondAttribute="centerX" id="6W5-fs-MFy"/>
+                            <constraint firstItem="DqF-EO-Cb7" firstAttribute="centerX" secondItem="eEo-kl-4mE" secondAttribute="centerX" id="6fb-T7-4LS"/>
                             <constraint firstItem="CbC-NR-5sG" firstAttribute="height" secondItem="WYZ-Bg-wA0" secondAttribute="height" multiplier="0.0513393" id="9i9-fe-AEI"/>
+                            <constraint firstItem="DqF-EO-Cb7" firstAttribute="top" secondItem="ibM-c6-gaV" secondAttribute="bottom" constant="51" id="AvZ-iu-tSg"/>
                             <constraint firstItem="SEN-lx-5E0" firstAttribute="top" secondItem="CbC-NR-5sG" secondAttribute="bottom" constant="21" id="EXI-dL-IZO"/>
                             <constraint firstItem="SEN-lx-5E0" firstAttribute="centerX" secondItem="eEo-kl-4mE" secondAttribute="centerX" id="HPj-WP-MxS"/>
                             <constraint firstItem="CbC-NR-5sG" firstAttribute="centerX" secondItem="eEo-kl-4mE" secondAttribute="centerX" id="JUN-2n-qpK"/>
@@ -690,11 +699,13 @@
                             <constraint firstItem="nUd-ct-n6t" firstAttribute="top" secondItem="eEo-kl-4mE" secondAttribute="top" constant="32" id="TyZ-G8-53I"/>
                             <constraint firstItem="CbC-NR-5sG" firstAttribute="width" secondItem="WYZ-Bg-wA0" secondAttribute="width" multiplier="0.439614" id="UxQ-PZ-rjj"/>
                             <constraint firstItem="ibM-c6-gaV" firstAttribute="width" secondItem="WYZ-Bg-wA0" secondAttribute="width" multiplier="0.550725" id="Wam-U4-cfv"/>
+                            <constraint firstItem="DqF-EO-Cb7" firstAttribute="height" secondItem="WYZ-Bg-wA0" secondAttribute="height" multiplier="0.0334821" id="b4f-YY-aVY"/>
                             <constraint firstItem="nUd-ct-n6t" firstAttribute="width" secondItem="WYZ-Bg-wA0" secondAttribute="width" multiplier="0.548309" id="bwu-5Z-q16"/>
                             <constraint firstItem="nUd-ct-n6t" firstAttribute="height" secondItem="WYZ-Bg-wA0" secondAttribute="height" multiplier="0.160714" id="eGA-z1-hix"/>
                             <constraint firstItem="kHi-jR-H2a" firstAttribute="top" secondItem="SEN-lx-5E0" secondAttribute="bottom" constant="28" id="hgZ-dp-WlR"/>
                             <constraint firstItem="ibM-c6-gaV" firstAttribute="height" secondItem="WYZ-Bg-wA0" secondAttribute="height" multiplier="0.0334821" id="hnT-8h-wqv"/>
                             <constraint firstItem="SEN-lx-5E0" firstAttribute="width" secondItem="WYZ-Bg-wA0" secondAttribute="width" multiplier="0.550725" id="iJu-hd-nqm"/>
+                            <constraint firstItem="DqF-EO-Cb7" firstAttribute="width" secondItem="WYZ-Bg-wA0" secondAttribute="width" multiplier="0.270531" id="iOr-EY-cpZ"/>
                             <constraint firstItem="kHi-jR-H2a" firstAttribute="width" secondItem="WYZ-Bg-wA0" secondAttribute="width" multiplier="0.550725" id="jxs-DI-8Bq"/>
                             <constraint firstItem="kHi-jR-H2a" firstAttribute="height" secondItem="WYZ-Bg-wA0" secondAttribute="height" multiplier="0.0379464" id="rMX-WH-oXk"/>
                             <constraint firstItem="ibM-c6-gaV" firstAttribute="centerX" secondItem="eEo-kl-4mE" secondAttribute="centerX" id="the-hL-bVT"/>
