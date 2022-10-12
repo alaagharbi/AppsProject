@@ -21,8 +21,6 @@ class BooksTableViewController: UITableViewController {
         super.viewDidLoad()
         self.tableViewList.delegate = nil
         self.tableViewList.dataSource = nil
- //       self.tableViewList = Bundle.main.loadNibNamed("TableViewController", owner: nil, options: nil)?.first as! TableViewController
-
         self.tableViewList.register(UINib(nibName: "SingleTableViewCell", bundle: nil), forCellReuseIdentifier: "cell")
         let _ = tems.asObservable().bind(to: tableViewList.rx.items(cellIdentifier: "cell",cellType: SingleTableViewCell.self)){
             (tv,tableViewItem,cell) in
@@ -45,7 +43,6 @@ class BooksTableViewController: UITableViewController {
         cell.productTitle.textColor = UIColor.blue
         cell.productTitle.text = bookObserver["title"]
         cell.Description.text = bookObserver["subtitle"]
-
           }
         }
         print("-------")
@@ -67,10 +64,6 @@ class BooksTableViewController: UITableViewController {
               //   self.addSubview(firt)
                  })
                 .disposed(by: disposeBag)
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
   

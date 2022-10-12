@@ -30,15 +30,7 @@ class AddBookViewController: UIViewController, UIImagePickerControllerDelegate, 
                 pickedImage = true
         }
     }
-    //    override func viewDidAppear(_ animated: Bool) {
-//        if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) && !pickedImage {
-//            let imagePickerController = UIImagePickerController()
-//            imagePickerController.delegate = self
-//            imagePickerController.sourceType = .photoLibrary
-//            self.present(imagePickerController, animated: true, completion: nil)
-//            pickedImage = true
-//        }
-//    }
+
     @IBAction func addBokSubmitCover(_ sender: UIButton) {
         let randomID = UUID.init().uuidString
         let uploaderRef = Storage.storage().reference(withPath: "bookCover/\(randomID).jpg")
