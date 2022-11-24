@@ -18,6 +18,8 @@
 		3AA2ACAD28C1161200EADA24 /* LogInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA2ACAC28C1161200EADA24 /* LogInController.swift */; };
 		3AA2ACAF28C1FFE600EADA24 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA2ACAE28C1FFE500EADA24 /* TabBarViewController.swift */; };
 		3AA2ACB128C2101800EADA24 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AA2ACB028C2101700EADA24 /* DetailViewController.swift */; };
+		6186E98E2920332900C40410 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6186E98D2920332900C40410 /* File.swift */; };
+		61A2D324292297FF0000D433 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A2D323292297FF0000D433 /* Users.swift */; };
 		87126E3628AD2744007BA102 /* UserInofrmations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87126E3528AD2744007BA102 /* UserInofrmations.swift */; };
 		873564C028AAC2F800D9C2DD /* HomeviewXIB.xib in Resources */ = {isa = PBXBuildFile; fileRef = 873564BF28AAC2F800D9C2DD /* HomeviewXIB.xib */; };
 		873564C428AAC32A00D9C2DD /* HomeviewXIB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873564C328AAC32A00D9C2DD /* HomeviewXIB.swift */; };
@@ -100,6 +102,8 @@
 		3AA2ACAC28C1161200EADA24 /* LogInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInController.swift; sourceTree = "<group>"; };
 		3AA2ACAE28C1FFE500EADA24 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		3AA2ACB028C2101700EADA24 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		6186E98D2920332900C40410 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		61A2D323292297FF0000D433 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		7CC696FF86C871A6EDEF279B /* Pods_AppsProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppsProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		87126E3528AD2744007BA102 /* UserInofrmations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInofrmations.swift; sourceTree = "<group>"; };
 		873564BF28AAC2F800D9C2DD /* HomeviewXIB.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeviewXIB.xib; sourceTree = "<group>"; };
@@ -232,6 +236,7 @@
 				873A23D228A2C1680001924F /* Info.plist */,
 				873A23CA28A2C1670001924F /* AppsProject.xcdatamodeld */,
 				3A36BECB28DB6A44002A66CC /* LocalBookListController.swift */,
+				6186E98D2920332900C40410 /* File.swift */,
 			);
 			path = AppsProject;
 			sourceTree = "<group>";
@@ -257,6 +262,7 @@
 				87F2DA9E28AA253E003255BD /* Books.swift */,
 				87F2DAA128AA27F2003255BD /* BookRef.swift */,
 				87F2DAA428AA3C22003255BD /* BookImage.swift */,
+				61A2D323292297FF0000D433 /* Users.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -553,6 +559,7 @@
 				876B80E828A4011000DF4697 /* LoginViewXIB.swift in Sources */,
 				87F2DA9528A6AFDF003255BD /* SingleTableViewCell.swift in Sources */,
 				3A36BEC728DB65A7002A66CC /* ElecronicBook+CoreDataClass.swift in Sources */,
+				6186E98E2920332900C40410 /* File.swift in Sources */,
 				87126E3628AD2744007BA102 /* UserInofrmations.swift in Sources */,
 				3A36BEC828DB65A7002A66CC /* ElecronicBook+CoreDataProperties.swift in Sources */,
 				876B80E228A3FC4600DF4697 /* WelcomeXIB.swift in Sources */,
@@ -580,6 +587,7 @@
 				87F2DA8C28A6AA89003255BD /* TableViewController.swift in Sources */,
 				3AA2ACB128C2101800EADA24 /* DetailViewController.swift in Sources */,
 				87F2DA9F28AA253E003255BD /* Books.swift in Sources */,
+				61A2D324292297FF0000D433 /* Users.swift in Sources */,
 				873A23C228A2C1670001924F /* AppDelegate.swift in Sources */,
 				873A23C428A2C1670001924F /* SceneDelegate.swift in Sources */,
 				3AA2ACAD28C1161200EADA24 /* LogInController.swift in Sources */,

@@ -21,6 +21,7 @@ class LogInViewController: UIViewController {
     }
     func signIn(onSuccess: @escaping() -> Void, onError: @escaping(_ errorMessage: String) -> Void) {
         //affichage du progressBar
+        
         UserApi().SignIn(email: self.emailTF.text!, password : self.passwordTF.text!, onSuccess: {
             onSuccess()
         })

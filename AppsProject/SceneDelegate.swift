@@ -20,18 +20,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
           
         // if user is logged in before
-        if let loggedUsername = UserDefaults.standard.string(forKey: "userName") {
-         // instantiate the main tab bar controller and set it as root view controller
-         // using the storyboard identifier we set earlier
-        let mainTabBarController = storyboard.instantiateViewController(identifier: "MainTabBarController")
-        window?.rootViewController = mainTabBarController
-        } else {
+//        if let loggedUsername = UserDefaults.standard.string(forKey: "userName") {
+//         // instantiate the main tab bar controller and set it as root view controller
+//         // using the storyboard identifier we set earlier
+//        let mainTabBarController = storyboard.instantiateViewController(identifier: "MainTabBarController")
+//        window?.rootViewController = mainTabBarController
+//        } else {
         // if user isn't logged in
         // instantiate the navigation controller and set it as root view controller
         // using the storyboard identifier we set earlier
-        let loginNavController = storyboard.instantiateViewController(identifier: "LoginNavigationController")
+        let loginNavController = storyboard.instantiateViewController(identifier: "AddBookViewController")
         window?.rootViewController = loginNavController
-     }
+   //  }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="THh-hJ-SP0">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MZR-E3-jQ1">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <accessibilityOverrides dynamicTypePreference="9"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LooKiiBook" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pam-Eu-1FG">
-                                <rect key="frame" x="-33" y="360" width="480" height="186"/>
+                                <rect key="frame" x="-33" y="362" width="480" height="186"/>
                                 <color key="backgroundColor" red="0.12941176469999999" green="0.68181818179999998" blue="0.96076143700000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="56"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -51,7 +52,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="k1ANjs-light-book-picture-png" translatesAutoresizingMaskIntoConstraints="NO" id="OeC-kW-Rfi">
-                                <rect key="frame" x="92" y="132" width="230" height="205"/>
+                                <rect key="frame" x="92" y="136" width="230" height="205"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.masksToBounds">
                                         <integer key="value" value="30"/>
@@ -60,14 +61,14 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMb-WR-OrN">
-                                <rect key="frame" x="23" y="477" width="368" height="49"/>
+                                <rect key="frame" x="23" y="481" width="368" height="49"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="a0g-5a-MfZ" kind="presentation" id="vrf-vT-uU0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3nf-4Q-o6h">
-                                <rect key="frame" x="23" y="557" width="368" height="49"/>
+                                <rect key="frame" x="23" y="561" width="368" height="49"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="4mg-Vl-G4S" kind="show" id="WfR-We-OEK"/>
@@ -401,7 +402,7 @@
                             <constraint firstItem="G1t-EJ-RQF" firstAttribute="width" secondItem="hxz-hR-hYr" secondAttribute="width" id="Z8r-bU-GRd"/>
                             <constraint firstItem="hzE-H0-YJ4" firstAttribute="height" secondItem="hxz-hR-hYr" secondAttribute="height" multiplier="0.167411" id="aYW-hf-Enh"/>
                             <constraint firstItem="qDP-75-uOh" firstAttribute="trailing" secondItem="pHY-rB-wun" secondAttribute="trailing" id="bL1-fy-0W8"/>
-                            <constraint firstItem="G1t-EJ-RQF" firstAttribute="height" secondItem="hxz-hR-hYr" secondAttribute="height" multiplier="1.13504" priority="250" id="cvw-cq-D4p" userLabel="View.height = 1.25 × height"/>
+                            <constraint firstItem="G1t-EJ-RQF" firstAttribute="height" relation="lessThanOrEqual" secondItem="hxz-hR-hYr" secondAttribute="height" multiplier="1.13504" priority="250" id="cvw-cq-D4p" userLabel="View.height = 1.25 × height"/>
                             <constraint firstAttribute="bottom" secondItem="qDP-75-uOh" secondAttribute="bottom" id="reS-Gu-goo"/>
                         </constraints>
                     </view>
@@ -538,7 +539,7 @@
             <objects>
                 <navigationController id="5fc-np-SVh" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bLZ-jn-2Bs">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -578,7 +579,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zhh-DP-keh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-497.10144927536237" y="-1190.625"/>
+            <point key="canvasLocation" x="-1096" y="-848"/>
         </scene>
         <!--profile-->
         <scene sceneID="bn4-Z3-Ao4">
@@ -626,11 +627,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="uKg-q1-pL3">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="8fZ-mA-QKY">
-                            <connections>
-                                <segue destination="MZR-E3-jQ1" kind="show" id="MII-AH-zYu"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="8fZ-mA-QKY"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VUA-RC-sV9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -640,40 +637,40 @@
         <!--Add Book View Controller-->
         <scene sceneID="0Ja-ho-gKK">
             <objects>
-                <viewController id="MZR-E3-jQ1" customClass="AddBookViewController" customModule="AppsProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="AddBookViewController" storyboardIdentifier="AddBookViewController" id="MZR-E3-jQ1" customClass="AddBookViewController" customModule="AppsProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WYZ-Bg-wA0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CbC-NR-5sG">
-                                <rect key="frame" x="116" y="272" width="182" height="46"/>
+                                <rect key="frame" x="116" y="232" width="182" height="46"/>
                                 <state key="normal" title="Add Book Cover"/>
                                 <connections>
                                     <action selector="selectCover:" destination="MZR-E3-jQ1" eventType="touchUpInside" id="mMH-DJ-NxH"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nUd-ct-n6t">
-                                <rect key="frame" x="93.5" y="120" width="227" height="144"/>
+                                <rect key="frame" x="93.5" y="80" width="227" height="144"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SEN-lx-5E0">
-                                <rect key="frame" x="93" y="339" width="228" height="34"/>
+                                <rect key="frame" x="93" y="299" width="228" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibM-c6-gaV">
-                                <rect key="frame" x="93" y="484" width="228" height="30"/>
+                                <rect key="frame" x="93" y="444" width="228" height="30"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
                                     <action selector="addBokSubmitCover:" destination="MZR-E3-jQ1" eventType="touchUpInside" id="HHs-fv-ghW"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Author's Name " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kHi-jR-H2a">
-                                <rect key="frame" x="93" y="401" width="228" height="34"/>
+                                <rect key="frame" x="93" y="361" width="228" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DqF-EO-Cb7">
-                                <rect key="frame" x="151" y="565" width="112" height="30"/>
+                                <rect key="frame" x="151" y="525" width="112" height="30"/>
                                 <state key="normal" title="download image"/>
                                 <connections>
                                     <action selector="downloadImage:" destination="MZR-E3-jQ1" eventType="touchUpInside" id="Azh-lj-R2u"/>
@@ -751,7 +748,7 @@
             <objects>
                 <viewController id="a0g-5a-MfZ" customClass="LogInController" customModule="AppsProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Oc-iH-7Ye">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QGN-J0-ccv">
@@ -850,7 +847,7 @@
                     <tabBarItem key="tabBarItem" title="local books" image="square.and.arrow.down" catalog="system" id="Bsp-Ih-H3k"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mfQ-ox-KX2">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -869,13 +866,10 @@
                     <tabBarItem key="tabBarItem" systemItem="downloads" id="6zC-4V-VOP"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5ss-7z-exp">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="7UZ-2l-Btj" kind="relationship" relationship="rootViewController" id="VxX-vf-VI1"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PNX-0R-h4e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -887,7 +881,7 @@
                 <navigationController storyboardIdentifier="LoginNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="THh-hJ-SP0" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vcz-5E-w3V">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -901,12 +895,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="books.vertical" catalog="system" width="128" height="103"/>
+        <image name="books.vertical" catalog="system" width="128" height="107"/>
         <image name="k1ANjs-light-book-picture-png" width="1600" height="711"/>
         <image name="list.dash" catalog="system" width="128" height="85"/>
-        <image name="person.circle" catalog="system" width="128" height="121"/>
+        <image name="person.circle" catalog="system" width="128" height="123"/>
         <image name="person.crop.square.fill" catalog="system" width="128" height="114"/>
-        <image name="person.fill.badge.plus" catalog="system" width="128" height="124"/>
+        <image name="person.fill.badge.plus" catalog="system" width="128" height="125"/>
         <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

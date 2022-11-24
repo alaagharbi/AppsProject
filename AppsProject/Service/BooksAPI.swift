@@ -20,7 +20,7 @@ class BooksAPI{
        
       private init() {
          //  URL = "https://www.googleapis.com/books/v1/volumes?q=harry+potter"
-           URL = "https://www.googleapis.com/books/v1/volumes?q=flowers&key=AIzaSyDGAJwt_KY9lhuvSk61F9fwPbsJ-I6EdmA"
+          URL = "172.17.11.169:3000/user"
        }
        func getBooks(){
         var observer = [String : Dictionary<String,Dictionary<String,String>>]()
@@ -28,6 +28,10 @@ class BooksAPI{
         var dys = [String : String] ()
            AF.request(URL)
              .validate()
+//             .responseJSON{ (data) in
+//                 print(data)
+//             }
+           
                .responseDecodable(of: Books.self) { (response) in
                guard let books = response.value else {
                        return
@@ -39,7 +43,7 @@ class BooksAPI{
                     dys["link"] = book.selfLink
                     dys["title"] = book.volumeInfo.title
                    // dys["date"] = book.volumeInfo.publishedDate
-                  
+
                     dys["image"] =   self.addSinString(string: book.volumeInfo.imageURL.thumbnail)
                     dys["subtitle"] = book.volumeInfo.subtitle
                     dys["description"] = book.volumeInfo.description
@@ -51,19 +55,15 @@ class BooksAPI{
                     print(dys["subtitle"])
                     print("///////////////////")
                     print(dys["description"])
-                    // dys["authors"] = book.volumeInfo.authors[0]
-                   //  dys["description"] = book.volumeInfo.description
-                    // obs["author"] = book.temp
-                    // obs["image"] = String(day.icon)
                     obs[String(self.i)] = dys
-                   // observer[String(self.i)] = obs
+                print(books)
                    }
                 print(obs)
                 print("-------")
                }
                    self.dic.accept(obs)
                    print("1111111")
-                   
+
                }
         
        }

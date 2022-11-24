@@ -11,7 +11,7 @@ class BooksTableViewController: UITableViewController {
     var collapseDetailViewController: Bool = true
 
  
-  //  var bookitem : Dictionary<String,String>
+    var bookitem : Dictionary<String,String> = [:]
     @IBOutlet weak var tableViewList: UITableView!
     @IBOutlet weak var titleLB: UILabel!
     @IBOutlet weak var cellView: UIView!
