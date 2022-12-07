@@ -49,7 +49,7 @@ class TableViewController: UIView {
               //    print("*******-------")
                     let bookitem = BooksAPI.shared.getBook(val: String(book.item))
 //                    print(a)
-       //             Taks.init(datetime: a["datetime"]!, temperature: a["temperature"]!, icon: ss)
+       //             Taks.init(datetime: bookitem["datetime"]!, temperature: bookitem["temperature"]!, icon: ss)
 
                     let firt = Bundle.main.loadNibNamed("DetailView", owner: nil, options: nil)?.first as! DetailView
 
